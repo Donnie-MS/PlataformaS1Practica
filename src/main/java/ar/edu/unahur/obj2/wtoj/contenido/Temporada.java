@@ -12,6 +12,10 @@ public class Temporada {
         this.episodios = new ArrayList<>();
     }
 
+    public void agregarEpisodio(Episodio nuevoEpisodio) {
+        episodios.add(nuevoEpisodio);
+    }
+
     public List<Episodio> getEpisodios() {
         return episodios;
     }

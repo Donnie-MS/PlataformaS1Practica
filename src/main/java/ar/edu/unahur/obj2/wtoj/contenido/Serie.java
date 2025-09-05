@@ -9,9 +9,17 @@ public class Serie extends Contenido{
     public Serie(String titulo, Double costoBase) {
         super(titulo, costoBase);
         this.temporadas = new ArrayList<>();
+    }   
+
+    public void agregarTemporada(Temporada nuevaTemporada) {
+        temporadas.add(nuevaTemporada);
     }
+
+    public void agregarEpisodio(Episodio nuevoEpisodio) {
+        temporadas.getLast().agregarEpisodio(nuevoEpisodio);
+    }
+
     @Override
-    
     public Double calcularCostoLicencia() {
         return getCostoBase() + calcularPromedioDeTodosLosEpisodios();
     }

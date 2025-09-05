@@ -3,8 +3,9 @@ package ar.edu.unahur.obj2.wtoj.CanonIdra;
 public class CanonIdra {
     private static CanonIdra instancia;
 
-    private Double canon = 0.5;
-
+    private final Double canonInicial = 0.5;
+    private Double canon = canonInicial;
+    
     private CanonIdra() {}
 
     public static CanonIdra getInstancia() {
@@ -21,5 +22,9 @@ public class CanonIdra {
     
     public void setCanon(Double nuevoCanon) {
         canon = nuevoCanon;
+    }
+
+    public void reset() {
+        canon = canonInicial;
     }
 }
