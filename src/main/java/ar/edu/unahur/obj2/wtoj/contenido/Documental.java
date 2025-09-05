@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.wtoj.contenido;
 
-import CanonIdra.CanonIdra;
+import ar.edu.unahur.obj2.wtoj.CanonIdra.CanonIdra;
 
 public class Documental extends Contenido {
 

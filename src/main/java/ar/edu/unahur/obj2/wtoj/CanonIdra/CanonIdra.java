@@ -1,9 +1,9 @@
-package CanonIdra;
+package ar.edu.unahur.obj2.wtoj.CanonIdra;
 //Creacion de singletone
 public class CanonIdra {
     private static CanonIdra instancia;
 
-    private Double canon = 5.0;
+    private Double canon = 0.5;
 
     private CanonIdra() {}
 
